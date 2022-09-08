@@ -1,0 +1,188 @@
+@font-face {
+  font-family: Mont;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Mont;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem;
+}
+section article {
+  margin-left: 1rem;
+  width: 400px;
+  padding-left: 1.5rem;
+  position: relative;
+}
+section article h2 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+section article .shp {
+  margin-top: 3rem;
+}
+section article label {
+  font-size: 12px;
+}
+section article .box {
+  width: 100%;
+  position: relative;
+  opacity: 0.6;
+}
+section article .box .country {
+  padding-left: 1.7rem;
+  height: 2.28rem;
+  border-radius: 5px;
+}
+section article .box .fas {
+  position: absolute;
+  top: 1.8rem;
+  left: 0.7rem;
+}
+section article .a1 {
+  width: 95%;
+  border-radius: 5px;
+  padding-left: 2rem;
+  line-height: 2rem;
+  opacity: 0.6;
+}
+section article .national {
+  display: flex;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+section article .national .fa-mail-bulk {
+  position: absolute;
+  top: 1.9rem;
+  left: 8.4rem;
+  opacity: 0.6;
+}
+section article .national .post-code {
+  margin-left: -7rem;
+  margin-right: 0.5rem;
+}
+section article .submit {
+  background-color: #f2994a;
+  color: white;
+  padding: 1rem 0.3rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  position: absolute;
+  right: 1.5rem;
+  margin-left: -3rem;
+}
+section aside {
+  margin-top: 3rem;
+  padding: 10px 20px;
+}
+section aside .element {
+  background-color: #eeeeee;
+  width: 360px;
+  height: 385px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+section aside .element1,
+section aside .element2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+section aside .element2 {
+  margin-top: 1.5rem;
+}
+section aside img {
+  width: 96px;
+  height: 110px;
+  border-radius: 10px;
+  margin-right: 1.5rem;
+}
+section aside h2 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin: 5px 0;
+}
+section aside .e-discription strong {
+  color: #f1994a;
+}
+section aside .e-discription .line {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+section aside .e-button {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  bottom: 0;
+  left: 7.5rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+section aside .e-button button {
+  font-size: 12px;
+  background-color: #e0e0e0;
+  border: none;
+  margin: 0.2rem;
+  padding: 5px;
+  opacity: 0.8;
+  font-weight: bolder;
+  color: black;
+  border-radius: 5px;
+}
+section aside .e-button p {
+  margin: 0 1rem;
+}
+section aside .order .shipping,
+section aside .order .total {
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+section aside .order .shipping {
+  margin-top: 4.8rem;
+  margin-bottom: 0.7rem;
+}
+
+@media screen and (max-width: 540px) {
+  header {
+    display: block;
+    text-align: center;
+    min-width: 470px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    min-width: 470px;
+  }
+  article {
+    grid-row-start: 2;
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+  aside {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

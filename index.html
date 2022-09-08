@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <section>
+        <article>
+            <h2>Contact information</h2>
+
+            <div class="box">
+                <label for="email">Email</label>
+
+                <div>
+                    <input class="a1" type="email" name="email" id="email" placeholder="Enter your email..." />
+                </div>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+            </div>
+
+            <div class="box">
+                <label for="phone">Phone</label>
+
+                <div>
+                    <input class="a1" type="tel" name="phone" id="phone" placeholder="Enter your phone..."
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                </div>
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            </div>
+
+            <h2 class="shp">Shipping adress</h2>
+            <div class="box">
+                <label for="name">Full name</label>
+
+                <div>
+                    <input class="a1" type="text" name="name" id="name" placeholder="Enter your Full name..." />
+                </div>
+                <i class="fas fa-user" aria-hidden="true"></i>
+            </div>
+
+            <div class="box">
+                <label for="address">Address</label>
+
+                <div>
+                    <input class="a1" type="text" name="address" id="address" placeholder="Enter your address..." />
+                </div>
+                <i class="fas fa-home" aria-hidden="true"></i>
+            </div>
+
+            <div class="box">
+                <label for="city">City</label>
+
+                <div>
+                    <input class="a1" type="text" name="city" id="city" placeholder="Enter your city..." />
+                </div>
+                <i class="fas fa-city" aria-hidden="true"></i>
+            </div>
+
+            <div class="national">
+
+                <div class="box">
+                    <label for="country">Country</label>
+
+                    <div>
+                        <select name="country" class="country" required>
+                            <option value="turkey">Turkey</option>
+                            <option value="Germany">Germany</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                    <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                </div>
+
+                <div class="box post-code">
+                    <label for="postal-code">Post Code</label>
+                    <div>
+                    </div>
+
+                    <input class="a1" type="text" name="postal-code" id="postal-code"
+                        placeholder="Enter your postal code..." required />
+                </div>
+                <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+            </div>
+
+            <div class="box">
+                <input type="checkbox" name="reminder" id="reminder" />
+                <label for="reminder">See this information next time</label>
+            </div>
+
+            <button class="submit" type="submit">Continue</button>
+            </form>
+        </article>
+        <aside>
+            <div class="element">
+                <div class="element1">
+                    <img src="./img/photo1.png" alt="" />
+
+                    <div class="e-discription">
+                        <h2>Vintage BackBag</h2>
+                        <p>
+                            <strong>$54.99</strong>
+                            <span class="line">$94.99</span>
+                        </p>
+                    </div>
+
+                    <div class="e-button">
+                        <button>
+                            <i class="fas fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+
+                <div class="element2">
+                    <img src="./img/photo2.png" alt="">
+
+                    <div class="e-discription">
+                        <h2>Levi Shoes</h2>
+                        <p>
+                            <strong>$74.99</strong>
+                            <span class="line">$124.99</span>
+                        </p>
+                    </div>
+
+                    <div class="e-button">
+                        <button>
+                            <i class="fas fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="order">
+                    <div class="shipping">
+                        <p>Shipping</p>
+                        <p>$19</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$148.98</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </section>
+</body>
+
+</html>

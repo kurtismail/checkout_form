@@ -1,0 +1,200 @@
+@font-face {
+  font-family: Mont;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Mont;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem;
+
+  article {
+    margin-left: 1rem;
+    width: 400px;
+    padding-left: 1.5rem;
+    position: relative;
+    h2 {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    .shp {
+      margin-top: 3rem;
+    }
+    label {
+      font-size: 12px;
+    }
+    .box {
+      width: 100%;
+      position: relative;
+      opacity: 0.6;
+      .country {
+        padding-left: 1.7rem;
+        height: 2.28rem;
+        border-radius: 5px;
+      }
+      .fas {
+        position: absolute;
+        top: 1.8rem;
+        left: 0.7rem;
+      }
+    }
+    .a1 {
+      width: 95%;
+      border-radius: 5px;
+      padding-left: 2rem;
+      line-height: 2rem;
+      opacity: 0.6;
+    }
+    .national {
+      display: flex;
+      position: relative;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      .fa-mail-bulk {
+        position: absolute;
+        top: 1.9rem;
+        left: 8.4rem;
+        opacity: 0.6;
+      }
+      .post-code {
+        margin-left: -7rem;
+        margin-right: 0.5rem;
+      }
+    }
+    .submit {
+      background-color: #f2994a;
+      color: white;
+      padding: 1rem 0.3rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      position: absolute;
+      right: 1.5rem;
+      margin-left: -3rem;
+    }
+  }
+  aside {
+    margin-top: 3rem;
+    // border-radius: 10px;
+    padding: 10px 20px;
+    .element {
+      background-color: #eeeeee;
+      width: 360px;
+      height: 385px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .element1,
+    .element2 {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .element2 {
+      margin-top: 1.5rem;
+    }
+    img {
+      width: 96px;
+      height: 110px;
+      border-radius: 10px;
+      margin-right: 1.5rem;
+    }
+    h2 {
+      //   display: flex;
+      font-size: 16px;
+      opacity: 0.7;
+      margin: 5px 0;
+    }
+    .e-discription {
+      //   display: flex;
+      //   flex-direction: column;
+      //   flex-wrap: wrap;
+      //   height: 50%;
+      strong {
+        color: #f1994a;
+      }
+      .line {
+        text-decoration: line-through;
+        font-size: 13px;
+      }
+    }
+    .e-button {
+      display: flex;
+      position: absolute;
+      align-items: center;
+      bottom: 0;
+      left: 7.5rem;
+      padding: 0.2rem;
+      border-radius: 5px;
+      border: 1px solid grey;
+      button {
+        font-size: 12px;
+        background-color: #e0e0e0;
+        border: none;
+        margin: 0.2rem;
+        padding: 5px;
+        opacity: 0.8;
+        font-weight: bolder;
+        color: black;
+        border-radius: 5px;
+      }
+      p {
+        margin: 0 1rem;
+      }
+    }
+    .order {
+      //   bottom: 0;
+      //   display: inline;
+      .shipping,
+      .total {
+        border-top: 1px solid grey;
+        display: flex;
+        justify-content: space-between;
+      }
+      .shipping {
+        margin-top: 4.8rem;
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header {
+    display: block;
+    text-align: center;
+    min-width: 470px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    min-width: 470px;
+  }
+  article {
+    grid-row-start: 2;
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+  aside {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+  }
+}
